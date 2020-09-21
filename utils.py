@@ -11,7 +11,7 @@ def sysCheck():
 			import ctypes
 			kernel32 = ctypes.windll.kernel32
 			kernel32.SetConsoleMode(kernel32.GetStdHandle(-11), 7)
-			clear = lambda: os.system('cls')
+			clean = lambda: os.system('cls')
 
 		elif(platform.system() == "Linux"):
 			clean = lambda: os.system('clear')
