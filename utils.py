@@ -1,12 +1,9 @@
 import shutil, platform, os, time
-
 TERM_X, TERM_Y = shutil.get_terminal_size()
 numLevels = {0: "", 1: "K", 2: "M",
  3: "B", 4: "T", 5: "Quad",
   6: "Quint", 7: "Sext", 8: "Sept",
-   9: "Oct", 10: "Non", 11: "Dec",
-    12: "Unde", 13: "Duode",
-	 14: "Trede", 15: "Quattuorde"}
+   9: "Oct", 10: "Non", 11: "Dec"}
 
 def sysCheck():
 	if ((platform.system() == 'Windows' and platform.release() == '10' and platform.version() >= '10.0.14393') or platform.system() == "Linux"):
@@ -46,7 +43,9 @@ def formatBigNumber(num: int)-> str:
 	while num >= 1000:
 		num /= 1000.0
 		level += 1
-	hrNum = f'{str(num).split(".")[0]} {numLevels[level]}'
+
+	level = 11 if level > 11 else level
+	hrNum = f'{str(num).split(".")[0]} {numLevels[level]}+'
 	return hrNum
 
 # Returns bool based on Y/n question
@@ -74,14 +73,7 @@ def continueAction(clean, colors):
 		choice = str(input(f"{colors['blue']}Again? Y/n: {colors['none']}")).lower()
 		if choice == 'y' or choice == 'n':
 			if choice == 'n':
-				clear(clean, colors)
-				time.sleep(1)
-				printc(f"{colors['green']}Thanks for using!")
-				time.sleep(2)
-				printc(f"Visit {colors['cyan']}www.codeblins.online{colors['green']} for more fun stuff!")
-				time.sleep(2)
-				printc(f"psyborg0ne, changing passwords since 1997")
-				time.sleep(5)
-				exit()
+				from pass_utils import main
+				main()
 			clear(clean, colors)
 			break

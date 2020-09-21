@@ -14,7 +14,7 @@ def passCheck(clean, colors):
 			userPass = str(getpass("Password to check (4-32):"))
 			if 4 <= len(userPass) <= 32:
 				break
-			print("Enter a 4 to 32 characters passwopr")
+			print("Enter a 4 to 32 characters password")
 
 		passLength = len(userPass)
 		fullLine = f'+{44 * "-"}|'
