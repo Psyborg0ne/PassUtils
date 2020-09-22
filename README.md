@@ -1,6 +1,9 @@
 # psy's Pass Utils
-*A set of tools to generate and check password strength*
+
 ![Pass Utils Main Menu](https://github.com/Psyborg0ne/PassUtils/blob/master/screens/menu.jpg "Main Menu")
+
+>*A set of tools to generate and check password strength*
+
 
 ## Dependencies
 (**NECESSARY** to copy generated passwords to clipboard)
