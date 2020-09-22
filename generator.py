@@ -10,8 +10,13 @@ def passGenerate(clean, colors):
 	clear(clean, colors)
 	while True:
 		while True:
+			while True:
+				try:
+					passLength = int(input("Password length (4-32): "))
+					break
+				except:
+					print("Enter a number between 4 and 32")
 
-			passLength = int(input("Password length (4-32): "))
 			if 4 <= passLength <= 32:
 				break
 			print("Enter a number between 4 and 32")
