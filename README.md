@@ -1,5 +1,6 @@
 # psy's Pass Utils
 *A set of tools to generate and check password strength*
+![Pass Utils Main Menu](https://github.com/Psyborg0ne/PassUtils/blob/master/screens/menu.jpg "Main Menu")
 
 ## Dependencies
 (**NECESSARY** to copy generated passwords to clipboard)
@@ -9,8 +10,10 @@
 *From inside the script folder run*
 `python pass_utils.py` 
 
-### Features
-**Password Generator**
+
+### Password Generator
+![Pass Utils Generator](https://github.com/Psyborg0ne/PassUtils/blob/master/screens/generator.jpg "Password Generator")
+
 + Generate random string (4 - 32 characters)
 + Specify what to include
   1. Lowercase
@@ -19,7 +22,11 @@
   4. Special characters (!@#$)
 + Copy to clipboard
 
-**Password Tester**
+
+
+### Password Tester
+![Pass Utils Tester](https://github.com/Psyborg0ne/PassUtils/blob/master/screens/tester.jpg "Password Tester")
+
 + Test any string (4 - 32 characters)
 + Show or hide password after you type it
 + View password stats
