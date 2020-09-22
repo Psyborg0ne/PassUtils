@@ -5,9 +5,9 @@
 >*A set of tools to generate and check password strength*
 
 
-## Dependencies
-(**NECESSARY** to copy generated passwords to clipboard)
-`pip install pyperclip` 
+## Requirements
+* `Python 3.8` *(Should be compatible with any version >= 3.6 )*
+* `pip install pyperclip` (**NECESSARY** to copy generated passwords to clipboard)
 
 ## HOW TO RUN
 *From inside the script folder run*
