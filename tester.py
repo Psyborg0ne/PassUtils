@@ -38,7 +38,7 @@ def passCheck(clean, colors):
 		print(f"| Pool   :{colors['blue']} {diffChars} {colors['none']}")
 		print(f"| Length :{colors['blue']} {passLength} {colors['none']}")
 		print(f"| Entropy:{colors['blue']} {round(passEntropy, 1)} {colors['none']}")
-		print(f"| Possile passwords :{colors['blue']} {possiblePass} {colors['none']}")
+		print(f"| Possible passwords :{colors['blue']} {possiblePass} {colors['none']}")
 
 		if passEntropy < 29:
 			strength = f"{colors['red']}Very Weak"
